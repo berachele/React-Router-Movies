@@ -8,8 +8,8 @@ const SavedList = props => {
   const goHome = () => {
     // console.log("Submitting...")
     history.push("/")
-    
   }
+  
   return (
     <div className="saved-list">
       <h3>Saved Movies:</h3>
