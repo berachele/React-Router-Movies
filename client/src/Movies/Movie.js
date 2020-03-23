@@ -3,7 +3,7 @@ import axios from 'axios';
 import {useRouteMatch} from "react-router-dom"
 import MovieCard from "./MovieCard"
 
-const Movie = (props) => {
+const Movie = () => {
   const [movie, setMovie] = useState();
  
 const {params} = useRouteMatch()
@@ -35,11 +35,12 @@ const {params} = useRouteMatch()
   if (!movie) {
     return <div>Loading movie information...</div>;
   }
+  
   return (
-    <MovieCard/>
+    <MovieCard />
   )
 
-  // const { title, director, metascore, stars } = movie;
+  
   // return (
   //   <div className="save-wrapper">
   //     <div className="movie-card">
